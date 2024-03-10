@@ -1,0 +1,60 @@
+\documentclass[journal, a4paper,onecolumn]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage[super]{nth}
+\usepackage{colortbl}
+\usepackage{lipsum}  
+\usepackage{subcaption}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\def\thesubsubsectiondis{\thesubsectiondis\arabic{subsubsection}}
+
+\makeatletter
+\def\subsubsection{%
+  \@startsection
+    {subsubsection}                 % type
+    {3}                             % level
+    {\parindent}                    % indent
+    {3.5ex plus 1.5ex minus 1.5ex}  % beforeskip {0ex plus 0.1ex minus 0.1ex}
+    {0.7ex plus .5ex minus 0ex}     % afterskip {0ex}
+    {\normalfont\normalsize\itshape}% style
+}
+\makeatother
+
+
+\begin{document}
+
+\title{\fontsize{20}{19.2}\selectfont Report Title}
+
+\author{\IEEEauthorblockN{Student Number\\University of The Witwatersrand
+\\School of Electrical and Information Engineering\\Course Code}
+\IEEEauthorblockA{\\
+Date\\}
+}
+
+\maketitle
+\thispagestyle{plain}
+\pagestyle{plain}
+
+\input{Text/abstract}
+\input{Text/introduction}
+\input{Text/references}
+
+\clearpage  
+\onecolumn
+\appendices
+
+\include{Text/figures}
+\include{Text/tables}
+
+\end{document}
